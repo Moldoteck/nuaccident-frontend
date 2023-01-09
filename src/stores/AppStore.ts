@@ -1,8 +1,8 @@
 import { proxy } from 'valtio'
-import getUserCount from 'helpers/getUserCount'
+import getJSONData from 'helpers/getJSONData'
 
 class AppStore {
-  userCount = getUserCount()
+  linkData = getJSONData()
 }
 
 export default proxy(new AppStore())
