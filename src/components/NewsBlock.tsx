@@ -1,7 +1,8 @@
 import { BodyText, HeaderText } from 'components/Text'
 import { Suspense } from 'preact/compat'
-import UserCount from 'components/UserCount'
 import { readFileSync } from 'fs'
+
+import news from '../linkContent.json'
 import classnames, {
   alignItems,
   display,

@@ -49,7 +49,7 @@ export function NewsTile(tileObj: { children: Entry }) {
         flexDirection('flex-col'),
         justifyContent('justify-center'),
         cursor('cursor-pointer'),
-        width('w-1/5'),
+        width('w-1/3'),
         maxWidth('max-w-fit'),
         minWidth('min-w-min'),
         height('h-fit'),
@@ -72,9 +72,12 @@ export function NewsTile(tileObj: { children: Entry }) {
           margin('m-2', 'my-5')
         )}
       >
-        <img src="https://tv8.md/_next/static/files/logoDark.svg"></img>
+        <img
+          src="https://tv8.md/_next/static/files/logoDark.svg"
+          className={classnames(display('flex'), height('h-32'))}
+        ></img>
       </div>
-      <div>
+      <div className={classnames(display('flex'))}>
         <a
           href={tileObj.children.link}
           className={classnames(
@@ -88,7 +91,7 @@ export function NewsTile(tileObj: { children: Entry }) {
           {tileObj.children.title}
         </a>
       </div>
-      <div></div>
+      <div className={classnames(display('flex'))}></div>
     </div>
   )
 }
