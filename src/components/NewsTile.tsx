@@ -72,7 +72,7 @@ export function NewsTile(tileObj: { children: Entry }) {
         cursor('cursor-pointer'),
         width('w-1/5'),
         maxWidth('max-w-fit'),
-        minWidth('min-w-min'),
+        minWidth('min-w-fit', 'md:min-w-min'),
         height('h-fit'),
         minHeight('2xl:min-h-max'),
         margin('m-2'),
@@ -98,7 +98,7 @@ export function NewsTile(tileObj: { children: Entry }) {
       >
         <img
           src={linkChecker(tileObj.children.link)}
-          className={classnames(display('flex'), height('h-32'))}
+          className={classnames(display('flex'), width('w-32'))}
         ></img>
       </div>
       <div className={classnames(display('flex'))}>
@@ -115,7 +115,9 @@ export function NewsTile(tileObj: { children: Entry }) {
             return false
           }}
         >
-          {tileObj.children.title}
+          <p className={classnames(fontSize('text-sm'))}>
+            {tileObj.children.title}
+          </p>
         </a>
       </div>
       <div className={classnames(display('flex'))}></div>

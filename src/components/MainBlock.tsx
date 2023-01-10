@@ -98,7 +98,7 @@ export default function () {
       <p
         className={classnames(
           whiteText,
-          fontSize('text-2xl', 'md:text-4xl'),
+          fontSize('text-xl', 'md:text-4xl'),
           textAlign('text-justify')
         )}
       >
