@@ -1,8 +1,3 @@
-import { BodyText, HeaderText } from 'components/Text'
-import { Suspense } from 'preact/compat'
-import { readFileSync } from 'fs'
-
-import news from '../linkContent.json'
 import classnames, {
   alignItems,
   display,
@@ -21,16 +16,9 @@ import AppStore from 'stores/AppStore'
 import { useSnapshot } from 'valtio'
 import { Entry } from 'helpers/getJSONData'
 
-const container = classnames(
-  display('flex'),
-  flexDirection('flex-row'),
-  flexWrap('flex-wrap'),
-  justifyContent('justify-center'),
-  alignItems('items-start'),
-  height('h-fit')
+const whiteText = classnames(
+  AppStore.dark ? textColor('text-white') : textColor('text-black-background')
 )
-
-const whiteText = classnames(textColor('text-white'))
 const grayText = classnames(textColor('text-gray-300'))
 
 const textStyle = classnames(
@@ -38,6 +26,16 @@ const textStyle = classnames(
   fontWeight('font-bold'),
   textAlign('text-center')
 )
+const container = classnames(
+  display('flex'),
+  flexDirection('flex-row'),
+  flexWrap('flex-wrap'),
+  justifyContent('justify-center'),
+  alignItems('items-start'),
+  height('h-fit'),
+  textStyle
+)
+
 export default function () {
   const { linkData } = useSnapshot(AppStore)
   // let data =

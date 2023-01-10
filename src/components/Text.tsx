@@ -6,8 +6,11 @@ import {
   textColor,
 } from 'classnames/tailwind'
 import ChildrenProp from 'models/ChildrenProp'
+import AppStore from 'stores/AppStore'
 
-const whiteText = classnames(textColor('text-white'))
+const whiteText = classnames(
+  AppStore.dark ? textColor('text-white') : textColor('text-black-background')
+)
 const grayText = classnames(textColor('text-gray-300'))
 
 const headerText = classnames(

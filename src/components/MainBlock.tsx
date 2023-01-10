@@ -3,11 +3,9 @@ import { Suspense } from 'preact/compat'
 import classnames, {
   alignItems,
   animation,
-  content,
   display,
   flexDirection,
   fontSize,
-  fontStyle,
   fontWeight,
   height,
   justifyContent,
@@ -19,6 +17,7 @@ import classnames, {
   width,
 } from 'classnames/tailwind'
 import NewsBlock from './NewsBlock'
+import AppStore from 'stores/AppStore'
 
 const container = classnames(
   display('flex'),
@@ -30,7 +29,9 @@ const container = classnames(
   minHeight('min-h-screen')
 )
 
-const whiteText = classnames(textColor('text-white'))
+const whiteText = classnames(
+  AppStore.dark ? textColor('text-white') : textColor('text-black-background')
+)
 const grayText = classnames(textColor('text-gray-300'))
 
 const textStyle = classnames(
@@ -159,14 +160,15 @@ export default function () {
           display('flex'),
           flexDirection('flex-col'),
           justifyContent('justify-center'),
-          alignItems('items-center')
+          alignItems('items-center'),
+          whiteText
         )}
       >
         <p>Creat cu tristețe din Moldova</p>
         <br />
         <p>
           <a
-            href="https://github.com/Moldoteck/nuaccident"
+            href="https://github.com/Moldoteck/nuaccident/issues"
             className={classnames(textDecoration('underline'))}
             target="_blank"
           >
