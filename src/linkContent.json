@@ -1,15 +1,5 @@
 [
   {
-    "date": "2023-01-06",
-    "title": "AGORA - Grav accident la Botanica. Un automobil a intrat cu viteză într-un pilon, iar șoferul a decedat (FOTO)",
-    "link": "https://agora.md/stiri/112006/grav-accident-la-botanica-un-automobil-a-intrat-cu-viteza-intr-un-pilon-iar-soferul-a-decedat-foto"
-  },
-  {
-    "date": "2023-01-05",
-    "title": "AGORA - Mai multe accidente cu implicarea pietonilor au avut loc pe parcursul zilei de azi. Cel puțin două persoane au decedat",
-    "link": "https://agora.md/stiri/112000/mai-multe-accidente-cu-implicarea-pietonilor-au-avut-loc-pe-parcursul-zilei-de-azi-cel-putin-doua-persoane-au-decedat"
-  },
-  {
     "date": "2023-01-09",
     "title": "TV8.md - /FOTO/ Accident la Soroca. O mașină s-a răsturnat după ce s-a lovit de parapetul drumului: Șoferul era beat",
     "link": "https://tv8.md/2023/09/01/foto-accident-la-soroca-o-masina-s-a-rasturnat-dupa-ce-s-a-lovit-de-parapetul-drumului-soferul-era-beat/219909"
@@ -45,8 +35,23 @@
     "link": "https://unimedia.info/ro/news/ec4d5e3b8617d8d6/video-la-un-pas-de-tragedie-o-femeie-cat-pe-ce-sa-fie-strivita-de-un-automobil-pe-o-trecere-de-pietoni.html"
   },
   {
+    "date": "2023-01-06",
+    "title": "AGORA - Grav accident la Botanica. Un automobil a intrat cu viteză într-un pilon, iar șoferul a decedat (FOTO)",
+    "link": "https://agora.md/stiri/112006/grav-accident-la-botanica-un-automobil-a-intrat-cu-viteza-intr-un-pilon-iar-soferul-a-decedat-foto"
+  },
+  {
+    "date": "2023-01-05",
+    "title": "AGORA - Mai multe accidente cu implicarea pietonilor au avut loc pe parcursul zilei de azi. Cel puțin două persoane au decedat",
+    "link": "https://agora.md/stiri/112000/mai-multe-accidente-cu-implicarea-pietonilor-au-avut-loc-pe-parcursul-zilei-de-azi-cel-putin-doua-persoane-au-decedat"
+  },
+  {
     "date": "2022-12-31",
     "title": "AGORA - Accident rutier în România, cu implicarea cetățenilor moldoveni: Un șofer a decedat, iar altul a ajuns la spital",
     "link": "https://agora.md/stiri/111838/accident-rutier-in-romania-cu-implicarea-cetatenilor-moldoveni-un-sofer-a-decedat-iar-altul-a-ajuns-la-spital"
+  },
+  {
+    "date": "2022-10-24",
+    "title": "AGORA - Unul din angajații Serviciului Vamal, implicați într-un accident la sfârșitul lunii august, a decedat. Dorina Panfil avea 38 de ani",
+    "link": "https://agora.md/stiri/109094/unul-din-angajatii-serviciului-vamal-implicati-intr-un-accident-la-sfarsitul-lunii-august-a-decedat-dorina-panfil-avea-38-de-ani"
   }
 ]
