@@ -131,7 +131,9 @@ export default function () {
         * prezentarea informației în mod unilateral pentru a îmbunătăți
         percepția publică față de un eveniment sau o persoană.{' '}
       </p> */}
-      <p id="textAnimat" className={classnames(whiteText)}></p>
+      <div className={classnames(height('h-14'))}>
+        <p id="textAnimat" className={classnames(whiteText)}></p>
+      </div>
       <p
         className={classnames(
           whiteText,
