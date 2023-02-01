@@ -39,46 +39,46 @@ const textStyle = classnames(
   fontWeight('font-bold'),
   textAlign('text-center')
 )
-// let speed = 25
-// let i = 0
-// let phraseIndex = 0
-// let text = ''
+let speed = 25
+let i = 0
+let phraseIndex = 0
+let text = ''
 
-// let textArray = [
-//   'Când cineva e beat la volan, nu mai produce accident, produce o crimă',
-//   'Când cineva privește la telefon în timp ce conduce, nu mai produce accident, produce o crimă',
-//   'Când cineva depășește viteza legală, nu mai produce accident, produce o crimă',
-//   'Când drumurile sunt proiectate și menținute prost, autoritățile comit o crimă',
-// ]
-// async function typeWriter() {
-//   if (i < text.length) {
-//     let par = document.getElementById('textAnimat')
-//     if (par) par.innerHTML += text.charAt(i)
-//     else return
-//     i++
-//     setTimeout(typeWriter, speed)
-//   } else {
-//     await new Promise((resolve) => setTimeout(resolve, 2000))
-//     while (i >= 0) {
-//       let par = document.getElementById('textAnimat')
-//       if (par) par.innerHTML = text.slice(0, i)
-//       else return
-//       i--
-//       await new Promise((resolve) => setTimeout(resolve, 5))
-//     }
-//     if (phraseIndex < textArray.length - 1) {
-//       phraseIndex++
-//       i = 0
-//       text = textArray[phraseIndex]
-//       setTimeout(typeWriter, speed)
-//     } else {
-//       phraseIndex = 0
-//       i = 0
-//       text = textArray[phraseIndex]
-//       setTimeout(typeWriter, speed)
-//     }
-//   }
-// }
+let textArray = [
+  'Când cineva e beat la volan, nu mai produce accident, produce o crimă',
+  'Când cineva privește la telefon în timp ce conduce, nu mai produce accident, produce o crimă',
+  'Când cineva depășește viteza legală, nu mai produce accident, produce o crimă',
+  'Când un pieton e lovit pe tracerea pietonală, șoferul nu produce accident, produce o crimă',
+]
+async function typeWriter() {
+  if (i < text.length) {
+    let par = document.getElementById('textAnimat')
+    if (par) par.innerHTML += text.charAt(i)
+    else return
+    i++
+    setTimeout(typeWriter, speed)
+  } else {
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+    while (i >= 0) {
+      let par = document.getElementById('textAnimat')
+      if (par) par.innerHTML = text.slice(0, i)
+      else return
+      i--
+      await new Promise((resolve) => setTimeout(resolve, 5))
+    }
+    if (phraseIndex < textArray.length - 1) {
+      phraseIndex++
+      i = 0
+      text = textArray[phraseIndex]
+      setTimeout(typeWriter, speed)
+    } else {
+      phraseIndex = 0
+      i = 0
+      text = textArray[phraseIndex]
+      setTimeout(typeWriter, speed)
+    }
+  }
+}
 
 export default function () {
   return (
@@ -131,7 +131,7 @@ export default function () {
         * prezentarea informației în mod unilateral pentru a îmbunătăți
         percepția publică față de un eveniment sau o persoană.{' '}
       </p> */}
-      <p id="textAnimat"></p>
+      <p id="textAnimat" className={classnames(whiteText)}></p>
       <p
         className={classnames(
           whiteText,
@@ -179,4 +179,4 @@ export default function () {
     </div>
   )
 }
-// typeWriter()
+typeWriter()
